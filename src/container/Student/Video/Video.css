@@ -1,0 +1,145 @@
+.App {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .video_container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .card {
+    background-color: #494747;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(236, 228, 228, 0.86);
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  button.download-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  button.download-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-icon {
+    margin-right: 5px;
+  }
+  
+  .card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .delete-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+    margin: 3px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+  }
+  .video_heading{
+    color: white;
+    border-radius: 5rem;
+  }
+  
+  
+  .delete-btn.loading::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.3s;
+    opacity: 1;
+    animation: loadingAnimation 1s infinite;
+  }
+  
+  .delete-btn.loading::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #fff;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+    animation: loadingAnimation 1s infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .video_heading {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+  }

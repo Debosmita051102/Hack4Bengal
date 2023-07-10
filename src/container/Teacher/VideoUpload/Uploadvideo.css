@@ -1,0 +1,235 @@
+.CreateVid_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #14181f;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  h1 span{
+    color: yellow;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .Createvid_container {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222b36;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  input[type="file"] + label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add some spacing */
+  }
+  
+  input[type="file"] + label:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="file"] + label::after {
+    content: "Choose File";
+    margin-left: 10px;
+  }
+  
+  input[type="file"]:not(:focus) + label::after {
+    content: attr(data-text);
+    margin-left: 10px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+/* CreateLive.css */
+
+/* ... existing styles ... */
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    height: 20px; /* Set a desired height */
+    resize: vertical; 
+    /* Allow vertical resizing */
+  }
+  
+  /* Add additional custom styles for the description section */
+  textarea {
+    margin-bottom: 20px;
+  }
+  
+  /* Add styles for a label or placeholder text */
+  textarea::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Add styles for the focused textarea */
+  textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* ... existing styles ... */
+
+  /* CreateLive.css */
+
+/* ... existing styles ... */
+
+.upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .upload-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-text {
+    font-size: 16px;
+    color: #888;
+    transition: color 0.3s ease;
+  }
+  
+  .upload-label:hover .upload-text {
+    color: #4caf50;
+  }
+  
+  .upload-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+  }
+  
+  .upload-label:hover .upload-text::after {
+    width: 50%;
+  }
+  
+  /* ... existing styles ... */
+/* CreateLive.css */
+
+/* ... existing styles ... */
+
+.Course,
+.Descript,
+.file {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+.Course label,
+.Descript label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Course input,
+.Descript textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ... existing styles ... */
+
+.Select_any {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .Select_any option {
+    font-size: 14px;
+  }
+  
+  .Createvid_container form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Createvid_container form label select {
+    flex: 1;
+    margin-left: 10px;
+  }
+  

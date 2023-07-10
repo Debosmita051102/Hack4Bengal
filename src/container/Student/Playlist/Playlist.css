@@ -1,0 +1,134 @@
+.bd{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.background_playlist {
+    background-color: rgb(82, 227, 227);
+    height: 50rem;
+  }
+  
+  .playlist_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .playlist_container {
+      grid-template-columns: 1fr;
+    }
+    .bd{
+        box-sizing: border-box;
+    }
+  }
+  
+  .main-video,
+  .video-playlist {
+    width: 100%;
+    height: 30rem;
+  }
+  
+  .main-video .playlist_playlist_title {
+    margin-top: 1rem;
+  }
+  
+  .video-playlist .playlist_title {
+    padding-left: 1rem;
+  }
+  
+  .video-playlist > p {
+    padding: 1rem;
+    color: var(--secondary);
+  }
+  
+  .video-playlist .videos_play {
+    height: 70%;
+    overflow-y: auto;
+  }
+  
+  .video-playlist .videos_list::-webkit-scrollbar {
+    width: 0.4rem;
+    border-radius: 0.4rem;
+    background-color: #0005;
+  }
+  
+  .video-playlist .videos_list::-webkit-scrollbar-thumb {
+    border-radius: 0.4rem;
+    background-color: #ffffff;
+  }
+  
+  .video-playlist .videos_list .video_play {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 0.1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-right: 35px;
+  }
+  
+  .video-playlist .videos_list .video_play:hover {
+    background-color: #0003;
+  }
+  
+  .video-playlist .videos_list .video_play.active {
+    background-color: #0003;
+    color: wheat;
+  }
+  
+  .main-video video {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .video_play img {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(100%);
+  }
+  
+  .video_play .videos_list .video.active img {
+    filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+  }
+  
+  .video_play p {
+    margin-left: 2.5rem;
+  }
+  
+  .video_play h3 {
+    width: 23rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 100 1rem sans-serif;
+    padding: 0 0.5rem;
+  }
+  
+  .playlist-header {
+    background: linear-gradient(to bottom, #10a8db, #e4e8e9);
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  .playlist-header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .background_playlist {
+    background: linear-gradient(to bottom, #034467, #022730);
+  }

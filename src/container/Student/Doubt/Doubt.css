@@ -1,0 +1,125 @@
+.doubt-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doubt-section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .doubt-form {
+    display: flex;
+  }
+  
+  .doubt-form__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .doubt-form__button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .doubt-list {
+    margin-top: 20px;
+  }
+  
+  .doubt-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doubt-item__content {
+    margin-bottom: 10px;
+  }
+  
+  .doubt-item__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .doubt-item__text {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .doubt-item__answers {
+    margin-top: 10px;
+  }
+  
+  .doubt-item__answer-list {
+    margin-top: 10px;
+  }
+  
+  .doubt-item__answer {
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .doubt-item__form {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .doubt-item__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .doubt-item__button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .doubt-section {
+      max-width: 100%;
+    }
+  
+    .doubt-form {
+      flex-direction: column;
+    }
+  
+    .doubt-form__input {
+      margin-bottom: 10px;
+    }
+  
+    .doubt-item__form {
+      flex-direction: column;
+    }
+  
+    .doubt-item__input {
+      margin-bottom: 10px;
+    }
+  }
+  
